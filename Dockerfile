@@ -42,7 +42,8 @@ ENV CATALINA_OPTS="\$EXTRA_JAVA_OPTS \
     -D-XX:SoftRefLRUPolicyMSPerMB=36000 \
     -Xbootclasspath/a:$CATALINA_HOME/lib/marlin.jar \
     -Dsun.java2d.renderer=org.marlin.pisces.PiscesRenderingEngine \
-    -Dorg.geotools.coverage.jaiext.enabled=true"
+    -Dorg.geotools.coverage.jaiext.enabled=true \
+    -Dorg.geoserver.htmlTemplates.staticMemberAccess=*"
 
 # init
 RUN apt update && \
